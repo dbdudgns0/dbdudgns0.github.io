@@ -1,4 +1,8 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>늘 한결같이, 평생 함께</title><style>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>늘 한결같이, 평생 함께</title>
+		<style>
 		/* webkit printing magic: print all background colors */
 		html {
 			-webkit-print-color-adjust: exact;
@@ -17,7 +21,7 @@
 
 		@media only screen {
 			body {
-				margin: 2em auto;
+				margin: 2rem auto;
 				max-width: 900px;
 				color: rgb(55, 53, 47);
 			}
@@ -25,13 +29,13 @@
 
 		body {
 			line-height: 1.5;
-			white-space: pre-wrap;
+			white-space: normal;
 		}
 
 		a,
 		a.visited {
 			color: inherit;
-			text-decoration: underline;
+			text-decoration: none;
 		}
 
 		.pdf-relative-link-path {
@@ -42,32 +46,43 @@
 		h1,
 		h2,
 		h3 {
-			letter-spacing: -0.01em;
+			letter-spacing: -0.01rem;
 			line-height: 1.2;
 			font-weight: 600;
 			margin-bottom: 0;
 		}
 
 		.page-title {
-			font-size: 2.5rem;
+			font-size: 5rem;
 			font-weight: 700;
 			margin-top: 0;
-			margin-bottom: 0.75em;
+			margin-bottom: 4rem;
+			text-align: center;
 		}
 
 		h1 {
-			font-size: 1.875rem;
-			margin-top: 1.875rem;
+			font-size: 4rem;
+			margin-top: 4rem;
 		}
 
 		h2 {
-			font-size: 1.5rem;
-			margin-top: 1.5rem;
+			font-size: 3rem;
+			margin-top: 3rem;
+		}
+
+		h2.subTitle{
+			margin-bottom: 3rem;
 		}
 
 		h3 {
-			font-size: 1.25rem;
-			margin-top: 1.25rem;
+			font-size: 2rem;
+			margin-top: 2rem;
+			white-space: pre-wrap;
+		}
+
+		h3.groom, h3.bridal{
+			font-size: 2.8rem;
+			white-space: pre-wrap;
 		}
 
 		.source {
@@ -87,16 +102,6 @@
 			page-break-inside: avoid;
 		}
 
-		figcaption {
-			opacity: 0.5;
-			font-size: 85%;
-			margin-top: 0.5em;
-		}
-
-		mark {
-			background-color: transparent;
-		}
-
 		.indented {
 			padding-left: 1.5em;
 		}
@@ -105,10 +110,11 @@
 			background: transparent;
 			display: block;
 			width: 100%;
-			height: 1px;
+			height: 13px;
 			visibility: visible;
 			border: none;
-			border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+			margin-top: 4em;
+			border-bottom: 4px solid rgba(55, 53, 47, 0.09);
 		}
 
 		img {
@@ -124,10 +130,6 @@
 
 		@page {
 			margin: 1in;
-		}
-
-		.collection-content {
-			font-size: 0.875rem;
 		}
 
 		.column-list {
@@ -147,70 +149,21 @@
 			padding-right: 0;
 		}
 
-		.table_of_contents-item {
-			display: block;
-			font-size: 0.875rem;
-			line-height: 1.3;
-			padding: 0.125rem;
-		}
-
-		.table_of_contents-indent-1 {
-			margin-left: 1.5rem;
-		}
-
-		.table_of_contents-indent-2 {
-			margin-left: 3rem;
-		}
-
-		.table_of_contents-indent-3 {
-			margin-left: 4.5rem;
-		}
-
-		.table_of_contents-link {
-			text-decoration: none;
-			opacity: 0.7;
-			border-bottom: 1px solid rgba(55, 53, 47, 0.18);
-		}
-
-		table,
-		th,
-		td {
-			border: 1px solid rgba(55, 53, 47, 0.09);
-			border-collapse: collapse;
-		}
-
-		table {
-			border-left: none;
-			border-right: none;
-		}
-
-		th,
-		td {
-			font-weight: normal;
-			padding: 0.25em 0.5em;
-			line-height: 1.5;
-			min-height: 1.5em;
-			text-align: left;
-		}
-
-		th {
-			color: rgba(55, 53, 47, 0.6);
-		}
-
 		ol,
 		ul {
 			margin: 0;
-			margin-block-start: 0.6em;
-			margin-block-end: 0.6em;
+			margin-block-start: 2rem;
+			margin-block-end: 2rem;
 		}
 
 		li>ol:first-child,
 		li>ul:first-child {
-			margin-block-start: 0.6em;
+			margin-block-start: 0.6rem;
 		}
 
 		ul>li {
 			list-style: disc;
+			font-size: 2.3rem;
 		}
 
 		ul.to-do-list {
@@ -361,8 +314,8 @@
 		}
 
 		p {
-			margin-top: 0.5em;
-			margin-bottom: 0.5em;
+			margin-top: 1.5rem;
+			margin-bottom: 1.5rem;
 		}
 
 		.image {
@@ -711,8 +664,98 @@
 		.checkbox-off {
 			background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 		}
-	</style></head><body><article id="e1d57adb-6045-4115-bc09-5ce58c6e1e49" class="page sans"><header><h1 class="page-title">늘 한결같이, 평생 함께</h1></header><div class="page-body"><figure id="7c3d3333-8b30-4c73-b1cc-0304852660f1" class="image"><a href="resource/8FFA63C6-DC00-4FD1-8BC1-16DA08C824AC.jpeg"><img style="width:1537px" src="resource/8FFA63C6-DC00-4FD1-8BC1-16DA08C824AC.jpeg" /></a></figure><h1 id="15542a3e-df0c-4753-83ad-3efaeca43f1a" class="">늘 한결같이, 평생 함께</h1><h2 id="88bc7bde-72dc-45e4-b3bb-f49a044ac292" class="">유영훈 &amp; 방지수</h2><h3 id="ec7463fb-7147-449c-82d8-4816b3f49d3d" class="">2021. 09. 04 SAT AM 11:00 더컨벤션 영등포점 2층 다이너스티홀</h3><hr id="f3aef747-e4db-4b98-b132-4fb518d05270" /><h2 id="cd23d88d-28d7-4934-8e53-bd417609a5fa" class="">INVITATION</h2><p id="827e7855-eeb5-4bf0-b6bc-df2d3574ff00" class="">코로나 19가 장기화 되면서 불안이 희망으로 바뀐다는 믿음으로 결혼식을 진행하게 되었습니다.</p><p id="a4cea09a-daad-45e6-8823-48be6a3b2ac6" class="">미래를 사랑과 믿음, 행복으로 채워가는 저희 두 사람의 시작점을 지켜봐주세요.</p><p id="0aff08d8-c2b9-4b3a-9cc7-b94628ee79ea" class="">서로가 마주 보며 다져온 사랑을 이제 한 곳을 바라보며 걸어갈 수 있는 큰 사랑으로 키우고자 합니다.</p><p id="bd048a1d-b4b7-4257-971d-cee9db18a6f0" class="">저희 두 사람이 사랑의 이름으로 지켜나갈 수 있게 앞날을 축복해 주시면 감사하겠습니다.</p><p id="ac249655-d2f8-4e06-a823-d6cc38b0f204" class="">잊지않고 잘 살겠습니다.</p><hr id="39e8d8b7-8f07-4334-a052-01b8cc5c1d42" /><h2 id="375f974c-ffac-4493-847a-0e7bc845f943" class="">WEDDING OF</h2><div id="f87872cb-cb00-4af4-a58c-8ec971753449" class="column-list"><div id="451573bd-a894-4aaf-895a-a96cccd3548e" style="width:50%" class="column"><h3 id="a3112446-a905-4163-a4c4-a38c17837dda" class="">신랑 유영훈 <a href="tel:01050329250">📞</a></h3><ul id="862e4195-5a12-4951-8647-3b61cfe01ed0" class="toggle"><li><details open=""><summary><strong>신랑측 혼주</strong></summary><p id="ebe9c98a-5173-471c-8792-44d6b30c4646" class="">아버지 유인종 <a href="tel:01033305500">📞</a></p><p id="d5bc306f-0a1c-4c9c-b8b9-e6f323c28a1f" class="">어머니 한명주 <a href="tel:01023686512">📞</a></p></details></li></ul></div><div id="bf6354eb-407e-4c51-82be-35c5a7c0f6bf" style="width:50%" class="column"><h3 id="4cc4abd7-333f-4882-80e6-6c085bce62fd" class="">신부 방지수 <a href="tel:01034522658">📞</a></h3><ul id="4b15794b-f665-4341-8387-4793dbb000ff" class="toggle"><li><details open=""><summary><strong>신부측 혼주</strong></summary><p id="2fd37ee0-ccf1-4a2d-8c6d-9c27176c5bf9" class="">아버지 방월영 📞</p><p id="085d11aa-f590-44ad-8131-08451841f4e8" class="">어머니 김계순 📞</p></details></li></ul></div></div><hr id="d71bd160-dc8d-4b6f-a9c2-1601a8a5fae6" /><h2>GALLERY</h2><p id="ac206a42-52e9-4ed2-bb44-ff777e228714" class=""><div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div></p><hr id="41dad02b-70d9-467f-b9d5-4ae7ac93165c" /><h2 id="fa88d6c8-416f-4b08-8765-449544d0f87b" class="">LOCATION</h2><figure id="c313ea5d-f2c1-4738-bc7f-fba8e9642612"><div class="source"  style="height:500px"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3164.232841882675!2d126.8985281!3d37.5260082!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9f2fcdf2ac59%3A0xe40f63934c7a3561!2z642U7Luo67Kk7IWYIOyYgeuTse2PrOygkA!5e0!3m2!1sko!2skr!4v1610466700355!5m2!1sko!2skr" frameborder="0" style="border:0; width:100%; height: 100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div></figure><p id="d45012b8-4818-4422-92b7-ce9c390085c6" class=""></p><h3 id="3db61b3d-6ad8-45ac-829d-696c45898a38" class="">더컨벤션 영등포점 2층 (다이너스티홀)</h3><p id="ad20c1c8-59c2-4f8f-845a-8ef2a717afca" class=""><a href="http://naver.me/5X9veKsS">서울 영등포구 국회대로38길 2</a></p><p id="377b12f6-233f-4bba-aa7e-364ef72740cb" class="">02-xxx-xxxx</p><h3 id="68ab24a5-86d4-45e2-b5d0-fd218e43c836" class="">자가용 안내</h3><p id="81adef45-463f-4d46-91c2-113bbb488d9c" class="">영등포구의회 주차장 이용</p><p id="2062cc94-d803-425d-bf36-0e09fd0081bc" class="">...</p><hr id="728cf2c4-3412-450e-aef0-df4c10ca291c" /><h2 id="314f39ff-1251-44e2-a0cb-361ea5f75194" class="">COMMENT</h2><figure id="fdeb5a97-6484-4fa3-bed0-e203a2734d5d"><div class="source"><iframe src="https://apption.co/app_posts/xbt687" frameborder="0" style="border:0; width:100%; height: 100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div></figure><p id="95ed0e92-67ed-401a-89cf-7f49baf35ebd" class=""></p>
-		<script type="text/javascript">
+	</style>
+	</head>
+	<body>
+		<article id="e1d57adb-6045-4115-bc09-5ce58c6e1e49" class="page sans">
+			<header>
+				<h1 class="page-title">늘 한결같이, 평생 함께</h1>
+			</header>
+			<div class="page-body">
+				<figure id="7c3d3333-8b30-4c73-b1cc-0304852660f1" class="image">
+					<a href="resource/8FFA63C6-DC00-4FD1-8BC1-16DA08C824AC.jpeg">
+						<img style="width:1537px" src="resource/8FFA63C6-DC00-4FD1-8BC1-16DA08C824AC.jpeg" />
+					</a>
+				</figure>
+				<h1 id="15542a3e-df0c-4753-83ad-3efaeca43f1a" class="">늘 한결같이, 평생 함께</h1>
+				<h2 id="88bc7bde-72dc-45e4-b3bb-f49a044ac292" class="">유영훈 &amp; 방지수</h2>
+				<h3 id="ec7463fb-7147-449c-82d8-4816b3f49d3d" class="">2021. 09. 04 SAT AM 11:00
+더컨벤션 영등포점 2층 다이너스티홀</h3>
+				<hr id="f3aef747-e4db-4b98-b132-4fb518d05270" />
+				<h2 id="cd23d88d-28d7-4934-8e53-bd417609a5fa" class="subTitle">INVITATION</h2>
+				<p id="827e7855-eeb5-4bf0-b6bc-df2d3574ff00" class="">코로나 19가 장기화 되면서 불안이 희망으로 바뀐다는 믿음으로 결혼식을 진행하게 되었습니다.</p>
+				<p id="a4cea09a-daad-45e6-8823-48be6a3b2ac6" class="">미래를 사랑과 믿음, 행복으로 채워가는 저희 두 사람의 시작점을 지켜봐주세요.</p>
+				<p id="0aff08d8-c2b9-4b3a-9cc7-b94628ee79ea" class="">서로가 마주 보며 다져온 사랑을 이제 한 곳을 바라보며 걸어갈 수 있는 큰 사랑으로 키우고자 합니다.</p>
+				<p id="bd048a1d-b4b7-4257-971d-cee9db18a6f0" class="">저희 두 사람이 사랑의 이름으로 지켜나갈 수 있게 앞날을 축복해 주시면 감사하겠습니다.</p>
+				<p id="ac249655-d2f8-4e06-a823-d6cc38b0f204" class="">잊지않고 잘 살겠습니다.</p>
+				<hr id="39e8d8b7-8f07-4334-a052-01b8cc5c1d42" />
+				<h2 id="375f974c-ffac-4493-847a-0e7bc845f943" class="subTitle">WEDDING OF</h2>
+				<div id="f87872cb-cb00-4af4-a58c-8ec971753449" class="column-list">
+					<div id="451573bd-a894-4aaf-895a-a96cccd3548e" style="width:50%" class="column">
+						<h3 id="a3112446-a905-4163-a4c4-a38c17837dda" class="groom">신랑 유영훈 <a href="tel:01050329250">📞</a>  <a href="sms:01050329250">✉️</a></h3>
+						<ul id="862e4195-5a12-4951-8647-3b61cfe01ed0" class="toggle">
+							<li>
+								<details open="">
+									<summary>
+										<strong>신랑측 혼주</strong>
+									</summary>
+									<p id="ebe9c98a-5173-471c-8792-44d6b30c4646" class="">아버지 유인종 
+										<a href="tel:01033305500">📞</a>
+									</p>
+									<p id="d5bc306f-0a1c-4c9c-b8b9-e6f323c28a1f" class="">어머니 한명주 
+										<a href="tel:01023686512">📞</a>
+									</p>
+								</details>
+							</li>
+						</ul>
+					</div>
+					<div id="bf6354eb-407e-4c51-82be-35c5a7c0f6bf" style="width:50%" class="column">
+						<h3 id="4cc4abd7-333f-4882-80e6-6c085bce62fd" class="bridal">신부 방지수 <a href="tel:01034522658">📞</a>  <a href="sms:01034522658">✉️</a></h3>
+						<ul id="4b15794b-f665-4341-8387-4793dbb000ff" class="toggle">
+							<li>
+								<details open="">
+									<summary>
+										<strong>신부측 혼주</strong>
+									</summary>
+									<p id="2fd37ee0-ccf1-4a2d-8c6d-9c27176c5bf9" class="">아버지 방월영 📞</p>
+									<p id="085d11aa-f590-44ad-8131-08451841f4e8" class="">어머니 김계순 📞</p>
+								</details>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<hr id="d71bd160-dc8d-4b6f-a9c2-1601a8a5fae6" />
+				<h2 class="subTitle">GALLERY</h2>
+				<p id="ac206a42-52e9-4ed2-bb44-ff777e228714" class="">
+					<div id="curator-feed-default-feed-layout">
+						<a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a>
+					</div>
+				</p>
+				<hr id="41dad02b-70d9-467f-b9d5-4ae7ac93165c" />
+				<h2 id="fa88d6c8-416f-4b08-8765-449544d0f87b" class="subTitle">LOCATION</h2>
+				<figure id="c313ea5d-f2c1-4738-bc7f-fba8e9642612">
+					<div class="source"  style="height:500px">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3164.232841882675!2d126.8985281!3d37.5260082!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9f2fcdf2ac59%3A0xe40f63934c7a3561!2z642U7Luo67Kk7IWYIOyYgeuTse2PrOygkA!5e0!3m2!1sko!2skr!4v1610466700355!5m2!1sko!2skr" frameborder="0" style="border:0; width:100%; height: 100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</div>
+				</figure>
+				<p id="d45012b8-4818-4422-92b7-ce9c390085c6" class=""></p>
+				<h3 id="3db61b3d-6ad8-45ac-829d-696c45898a38" class="">더컨벤션 영등포점 2층 (다이너스티홀)</h3>
+				<p id="ad20c1c8-59c2-4f8f-845a-8ef2a717afca" class="">
+					<a href="http://naver.me/5X9veKsS">서울 영등포구 국회대로38길 2</a>
+				</p>
+				<p id="377b12f6-233f-4bba-aa7e-364ef72740cb" class="">02-xxx-xxxx</p>
+				<h3 id="68ab24a5-86d4-45e2-b5d0-fd218e43c836" class="">자가용 안내</h3>
+				<p id="81adef45-463f-4d46-91c2-113bbb488d9c" class="">영등포구의회 주차장 이용</p>
+				<p id="2062cc94-d803-425d-bf36-0e09fd0081bc" class="">...</p>
+				<hr id="728cf2c4-3412-450e-aef0-df4c10ca291c" />
+				<h2 id="314f39ff-1251-44e2-a0cb-361ea5f75194" class="subTitle">COMMENT</h2>
+				<figure id="fdeb5a97-6484-4fa3-bed0-e203a2734d5d">
+					<div class="source">
+						<iframe src="https://apption.co/app_posts/xbt687" frameborder="0" style="border:0; width:100%; height: 100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</div>
+				</figure>
+				<p id="95ed0e92-67ed-401a-89cf-7f49baf35ebd" class=""></p>
+				<script type="text/javascript">
 				/* curator-feed-default-feed-layout */
 				(function(){
 				var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
@@ -720,4 +763,6 @@
 				e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
 				})();
 				</script>
-	</article></body></html>
+			</article>
+		</body>
+	</html>
